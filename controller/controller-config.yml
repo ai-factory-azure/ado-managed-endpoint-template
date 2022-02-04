@@ -1,0 +1,19 @@
+variables:
+
+# Workspace settings
+  ml_workspace_connection: Azure-ARM-Dev
+  ml_workspace_name: main
+  ml_workspace_rg: azureml-examples-rg
+
+# Managed Endpoints
+  endpoint_name: adoEndpoint3  #no spaces or _ allowed; only lowercase, caps, and -
+  
+  # Blue deployment
+  blue_deployment_name: blue
+  blue_deployment_file: blue-deployment.yml
+  
+  # Green deployment
+  green_deployment_name: green
+  green_deployment_file: green-deployment.yml
+  
+  traffic_allocation: blue=90 green=10 
