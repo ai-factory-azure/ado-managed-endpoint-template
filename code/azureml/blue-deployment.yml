@@ -2,10 +2,9 @@ $schema: https://azuremlschemas.azureedge.net/latest/managedOnlineDeployment.sch
 name: blue
 endpoint_name: my-endpoint
 model:
-  local_path: ../model/sklearn_regression_model.pkl
+  path: ../model/sklearn_regression_model.pkl
 code_configuration:
-  code: 
-    local_path: ../src/
+  code: ../src/
   scoring_script: managed_online_endpoint.py
 environment: 
   conda_file: ../../controller/environments/blue-env.yml
